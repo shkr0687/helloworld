@@ -23,7 +23,6 @@ spec:
 ---
 apiVersion: v1
 kind: Service
-namespace: helloworld
 metadata:
   name: helloworld
 spec:
