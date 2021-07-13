@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: jayuser/helloworld:helloworld
+          image: jayuser/helloworld:helloworld:latest
           ports:
             - containerPort: 8090
           env:
@@ -23,6 +23,7 @@ spec:
 ---
 apiVersion: v1
 kind: Service
+namespace: helloworld
 metadata:
   name: helloworld
 spec:
