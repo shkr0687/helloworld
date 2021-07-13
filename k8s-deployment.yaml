@@ -13,7 +13,7 @@ spec:
         app: helloworld
     spec:
       containers:
-          -name: springboot
+        - name: springboot
           image: jayuser/helloworld:latest
           imagePullPolicy: Always
           ports:
