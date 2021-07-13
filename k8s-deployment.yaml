@@ -13,8 +13,9 @@ spec:
         app: helloworld
     spec:
       containers:
-        - name: springboot
-          image: jayuser/helloworld:helloworld:latest
+          -name: springboot
+          image: jayuser/helloworld:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8090
           env:
